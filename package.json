@@ -1,0 +1,19 @@
+{
+  "name": "ryanafrish7.github.io",
+  "version": "1.0.0",
+  "main": "index.html",
+  "dependencies": {
+    "lit-element": "^2.0.0-rc.3",
+    "lit-html": "^1.0.0-rc.2"
+  },
+  "devDependencies": {
+    "polymer-cli": "^1.9.5"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanAfrish7/ryanafrish7.github.io.git"
+  },
+  "author": "Afrish Khan S <ryanafrish7@gmail.com>",
+  "license": "MIT"
+}
