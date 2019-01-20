@@ -51,7 +51,7 @@ class AppMain extends LitElement {
       <div class='menu'>
         <a href='/' @click=${handleNavigation}>Home</a>
         <a href='/works' @click=${handleNavigation}>Works</a>
-        <a href='/reflections' @click=${handleNavigation}>Reflection</a>
+        <a href='/reflections' @click=${handleNavigation}>Reflections</a>
       </div>
 
       ${until(fetchPageForRoute(this.currentRoute), html`...`)}
