@@ -52,8 +52,8 @@ class ReflectionsPage extends LitElement {
                 </section>
                 <section>
                     <h3>Films</h3>
-                    <p><a href="https://www.youtube.com/watch?v=W3vzWIU-gsg">Too Shy — Ryan Hutchins</a></p>
-                    <p><a href="https://www.hulu.com/movie/the-usual-suspects-1699790b-9395-42c4-8621-774bbd20f00c">The Usual Suspects</a></p>
+                    <p><a target="_blank" href="https://www.youtube.com/watch?v=W3vzWIU-gsg">Too Shy — Ryan Hutchins</a></p>
+                    <p><a target="_blank" href="https://www.hulu.com/movie/the-usual-suspects-1699790b-9395-42c4-8621-774bbd20f00c">The Usual Suspects</a></p>
                 </section>
             </div>
         `;
