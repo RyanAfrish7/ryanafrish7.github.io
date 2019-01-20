@@ -54,7 +54,7 @@ class AppMain extends LitElement {
         <a href='/reflections' @click=${handleNavigation}>Reflection</a>
       </div>
 
-      ${until(fetchPageForRoute(this.currentRoute), html`loading...`)}
+      ${until(fetchPageForRoute(this.currentRoute), html`...`)}
     `;
   }
 }

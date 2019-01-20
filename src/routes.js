@@ -2,6 +2,7 @@ import { html } from 'lit-element';
 
 const routes = {
     '': async () => { await import('/src/home-page.js'); return html`<home-page></home-page>` },
+    'works': async () => { await import('/src/works-page.js'); return html `<works-page></works-page>` },
     '404': async () => { await import('/src/not-found-page.js'); return html`<not-found-page></not-found-page>` }
 }
 
