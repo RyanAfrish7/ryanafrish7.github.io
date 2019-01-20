@@ -1,0 +1,26 @@
+{
+  "name": "ryanafrish7.github.io",
+  "version": "1.0.0",
+  "main": "index.html",
+  "dependencies": {
+    "@polymer/paper-spinner": "^3.0.1",
+    "lit-element": "^2.0.0-rc.3",
+    "lit-html": "^1.0.0-rc.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "merge-stream": "^1.0.1",
+    "polymer-build": "^3.1.1",
+    "polymer-cli": "^1.9.5",
+    "rimraf": "^2.6.3"
+  },
+  "scripts": {
+    "build": "node build_script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanAfrish7/ryanafrish7.github.io.git"
+  },
+  "author": "Afrish Khan S <ryanafrish7@gmail.com>",
+  "license": "MIT"
+}
