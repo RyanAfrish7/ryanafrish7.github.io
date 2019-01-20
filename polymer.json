@@ -1,0 +1,30 @@
+{
+    "entrypoint": "index.html",
+    "shell": "src/app-main.js",
+    "fragments": [
+      "src/home-page.js",
+      "src/not-found-page.js",
+      "src/reflections-page.js",
+      "src/works-page.js"
+    ],
+    "sources": [
+     "src/**",
+     "avatar.svg",
+     ".nojekyll",
+     "package.json",
+     "package-lock.json"
+    ],
+    "extraDependencies": [
+      
+    ],
+    "moduleResolution": "node",
+    "npm": true,
+    "builds": [
+      { 
+        "name": "es6prod",
+        "preset": "es6-bundled",
+        "addPushManifest": true
+      }
+    ]
+  }
+  

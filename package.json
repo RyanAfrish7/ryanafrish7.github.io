@@ -8,9 +8,15 @@
     "lit-html": "^1.0.0-rc.2"
   },
   "devDependencies": {
-    "polymer-cli": "^1.9.5"
+    "gulp": "^4.0.0",
+    "merge-stream": "^1.0.1",
+    "polymer-build": "^3.1.1",
+    "polymer-cli": "^1.9.5",
+    "rimraf": "^2.6.3"
   },
-  "scripts": {},
+  "scripts": {
+    "build": "node build_script.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RyanAfrish7/ryanafrish7.github.io.git"
