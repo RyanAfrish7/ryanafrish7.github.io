@@ -17,11 +17,20 @@ export const fetchPageForRoute = (route, options) => {
     const subRoute = route.getSubroute();
 
     if (routes.hasOwnProperty(immediateRouteData)) {
+        gtag('config', 'UA-87666667-5', {
+            'page_path': '/' + immediateRouteData
+        });
+          
         return routes[immediateRouteData]({
             ...options,
             subRoute
         });
     } else {
+        gtag('event', 'page_not_found', {
+            'event_category': 'navigation',
+            'event_label': '/' + immediateRouteData,
+        });
+
         requestAnimationFrame(() => router.replaceState({}, "Not found", "/404"));
         return new Promise(() => {});
     }

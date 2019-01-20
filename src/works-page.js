@@ -110,7 +110,12 @@ class WorksPage extends LitElement {
 
     renderCard(repo) {
         return html`
-            <a class="card" href=${repo.html_url} target="_blank" rel="noopener noreferrer">
+            <a class="card" href=${repo.html_url} target="_blank" rel="noopener noreferrer" @click=${() => {
+                gtag('event', 'page_not_found', {
+                    'event_category': 'navigation',
+                    'event_label': '/' + immediateRouteData,
+                });
+            }}>
                 <h3>${repo.name}</h3>
                 <p>${repo.description || "Please checkout at Github."}</p>
             </a>
