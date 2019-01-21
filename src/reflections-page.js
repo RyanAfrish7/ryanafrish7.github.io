@@ -27,12 +27,23 @@ class ReflectionsPage extends LitElement {
                 }
 
                 section {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin: 18px;
                     margin-top: 40px;
                 }
 
-                iframe.spotify {
-                    overflow: hidden;
-                    border-radius: 12px;
+                @media (orientation: portrait) and (max-device-width: 768px) {
+                    section {
+                        align-items: center;
+                        text-align: center;
+                    }
+
+                    section > p {
+                        line-height: 1.5;
+                        margin: 7px 14px;
+                    }
                 }
             </style>
             <div class="space">
