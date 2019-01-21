@@ -8,6 +8,7 @@
     "lit-html": "^1.0.0-rc.2"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "gulp": "^4.0.0",
     "merge-stream": "^1.0.1",
     "polymer-build": "^3.1.1",
@@ -15,7 +16,8 @@
     "rimraf": "^2.6.3"
   },
   "scripts": {
-    "build": "node build_script.js"
+    "build": "node build_script.js",
+    "deploy": "node ./node_modules/gh-pages/bin/gh-pages.js -d build --branch master"
   },
   "repository": {
     "type": "git",

@@ -15712,6 +15712,7 @@ class WorksPage extends LitElement {
                 }
 
                 .quote {
+                    margin: 0 24px;
                     text-align: center;
                 }
 
@@ -15742,10 +15743,11 @@ class WorksPage extends LitElement {
                 .card {
                     display: block;
                     border-radius: 24px;
+                    box-sizing: border-box;
                     box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.14);
                     padding: 18px;
-                    min-width: 280px;
-                    width: 480px;
+                    width: 100%;
+                    max-width: 480px;
                     margin: 32px 0;
                     color: rgba(0, 0, 0, 0.87);
                 }
@@ -15759,6 +15761,15 @@ class WorksPage extends LitElement {
 
                 paper-spinner-lite {
                     --paper-spinner-color: rgba(0, 0, 0, .0.54);
+                }
+
+                @media (orientation: portrait) and (max-device-width: 768px) {
+                    .card {
+                        box-shadow: none;
+                        margin: 24px 0;
+                        border-radius: 0;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+                    }
                 }
             </style>
             
@@ -15782,9 +15793,9 @@ class WorksPage extends LitElement {
   renderCard(repo) {
     return html`
             <a class="card" href=${repo.html_url} target="_blank" rel="noopener noreferrer" @click=${() => {
-      gtag('event', 'page_not_found', {
+      gtag('event', 'outgoing_traffic', {
         'event_category': 'navigation',
-        'event_label': '/' + immediateRouteData
+        'event_label': repo.html_url
       });
     }}>
                 <h3>${repo.name}</h3>
