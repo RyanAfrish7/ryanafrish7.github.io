@@ -9,7 +9,7 @@
     ],
     "sources": [
      "src/**",
-     "avatar.svg",
+     "res/avatar.svg",
      ".nojekyll",
      "package.json",
      "package-lock.json"

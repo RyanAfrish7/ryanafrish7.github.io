@@ -39,6 +39,7 @@ class AppMain extends LitElement {
           padding: 12px 14px;
           box-sizing: border-box;
           margin: 0 auto;
+          user-select: none;
         }
 
         .menu a {

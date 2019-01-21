@@ -29,6 +29,8 @@ class HomePage extends LitElement {
                     bottom: 0;
                     width: 100%;
                     max-height: 100%;
+                    -webkit-user-drag: none;
+                    user-select: none;
                     object-fit: contain;
                 }
 
@@ -73,7 +75,7 @@ class HomePage extends LitElement {
             </style>
             <div id="space">
                 <div id="avatar-container">
-                    <img id="avatar" src="avatar.svg" alt="avatar" />
+                    <img id="avatar" src="/res/avatar.svg" alt="avatar" />
                 </div>
                 <div id="intro-container">
                     <h1 class="name">Afrish Khan S</h1>

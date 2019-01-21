@@ -124,7 +124,7 @@ class WorksPage extends LitElement {
             <a class="card" href=${repo.html_url} target="_blank" rel="noopener noreferrer" @click=${() => {
                 gtag('event', 'outgoing_traffic', {
                     'event_category': 'navigation',
-                    'event_label': '/' + repo.html_url,
+                    'event_label': repo.html_url,
                 });
             }}>
                 <h3>${repo.name}</h3>
